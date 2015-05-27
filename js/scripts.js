@@ -1,7 +1,7 @@
 var primeSifter = function(number) {
   var all = []
-  for(var i = 0; i < number - 1; i++) {
-    all.push(i + 2);
+  for(var i = 2; i <= number; i++) {
+    all.push(i);
   }
 
   for(var prime = 2; prime < number; prime++) {
