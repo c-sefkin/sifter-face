@@ -13,3 +13,17 @@ var primeSifter = function(number) {
 
   return all;
 }
+
+$(document).ready(function(){
+
+  $("#prime-sifter").submit(function(event){
+
+    var input = ($("input#input-string").val());
+    var result = primeSifter(input);
+    $(".output").text(result);
+    $("#result").show();
+    event.preventDefault();
+
+  });
+
+});
